@@ -28,6 +28,7 @@ import AlEtihadImg from '../assets/images/projects/AlEtihad.png';
 import UnifiedImg from '../assets/images/projects/Unified.png';
 import DigitalMindsImg from '../assets/images/projects/digital-minds-on.png';
 import WorkInAusImg from '../assets/images/projects/workinaus.png';
+import AJSMajuImg from '../assets/images/projects/ajsmaju.png';
 import ContactForm from '@/components/ContactForm';
 import MyProjects from '@/components/MyProjects';
 
@@ -85,6 +86,14 @@ const Home = () => {
             image: WorkInAusImg,
             tags: ["React", "Tailwind", "AI Tools", "Video Ads", "Resume Upload"],
             link: "https://workinaus.com.au/home",
+            featured: false,
+        },
+        {
+            title: "AJS Maju Website",
+            description: "Designed and developed the full frontend for AJS Maju, delivering a seamless, responsive UI that enhances user experience and brand identity. Built with performance, accessibility, and clarity in mind to ensure consistency across devices.",
+            image: AJSMajuImg,
+            tags: ["React", "Bootstrap", "UI/UX", "Brand Identity", "Responsive Web", "XD to React Conversion"],
+            link: "https://beta.ajsmaju.com/",
             featured: false,
         }
 
