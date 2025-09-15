@@ -61,13 +61,16 @@ const Navbar = () => {
                     <a href="#home" className="text-xl font-heading text-primary">
                         <img src={Logo} alt='ab.rehman.dev' />
                     </a>
-                    <nav className="hidden md:flex items-center gap-8">
+                    <nav className="hidden md:flex items-center gap-6">
                         <NavLink href="#home">Home</NavLink>
                         <NavLink href="#about">About</NavLink>
                         <NavLink href="#my_services">Services</NavLink>
                         <NavLink href="#projects">Projects</NavLink>
                         <NavLink href="#contact">Contact</NavLink>
                         <ThemeToggle />
+                        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                            <Button size="sm" variant="outline" className="font-sans rounded-full">My Resume</Button>
+                        </a>
                         <a href="#contact">
                             <Button size="sm" className="font-sans rounded-full">Hire Me</Button>
                         </a>

@@ -272,9 +272,11 @@ const Home = () => {
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                        <Button size="lg" className="rounded-full shadow-lg px-8 py-4">
-                            View CV
-                        </Button>
+                        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                            <Button size="lg" className="rounded-full shadow-lg px-8 py-4">
+                                View CV
+                            </Button>
+                        </a>
                         <a href="#contact">
                             <Button
                                 size="lg"
