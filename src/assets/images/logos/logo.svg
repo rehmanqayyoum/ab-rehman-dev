@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 120" width="340" height="82" role="img" aria-label="ab.rehman.dev logo">
+  <title>ab.rehman.dev</title>
+  <defs>
+    <style>
+      .blue {
+        fill: #0a73bb;
+      }
+      .black {
+        fill: #37353E;
+      }
+      .word {
+        font-family: Inter, "Poppins", "Segoe UI", Roboto, system-ui, -apple-system, sans-serif;
+        font-weight: 700;
+        font-size: 54px;
+        letter-spacing: 0.2px;
+      }
+      .code {
+        font-family: monospace;
+        font-size: 60px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+
+  <!-- Opening "</" -->
+  <text x="20" y="70" class="code blue">&lt;/</text>
+
+  <!-- Wordmark -->
+  <text class="word" x="90" y="55" dominant-baseline="middle">
+    <tspan class="black">ab.rehman</tspan><tspan class="blue">.dev</tspan>
+  </text>
+
+  <!-- Closing ">" -->
+  <text x="475" y="70" class="code blue">&gt;</text>
+</svg>

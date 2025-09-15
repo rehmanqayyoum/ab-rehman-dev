@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link id="dynamic-favicon" rel="icon" type="image/png" href="src/assets/favicon/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdul Rehman | Frontend Engineer & UX/UI Designer | Design Thinker | </title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+
+  <script>
+    const titleText = "Abdul Rehman | Frontend Engineer & UX/UI Designer | Design Thinker | ";
+    let index = 0;
+    function scrollTitle() {
+      document.title = titleText.substring(index) + titleText.substring(0, index);
+      index = (index + 1) % titleText.length;
+    }
+    setInterval(scrollTitle, 250);
+  </script>
+
+  <!-- <script>
+    const favicon = document.getElementById("dynamic-favicon");
+    let angle = 0;
+    const img = new Image();
+    img.src = "src/assets/favicon/favicon.svg";
+
+    img.onload = () => {
+      setInterval(() => {
+        const canvas = document.createElement("canvas");
+        const ctx = canvas.getContext("2d");
+        canvas.width = 64;
+        canvas.height = 64;
+
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        ctx.save();
+        ctx.translate(canvas.width / 2, canvas.height / 2);
+        ctx.rotate((angle * Math.PI) / 180);
+        ctx.translate(-canvas.width / 2, -canvas.height / 2);
+        ctx.drawImage(img, 0, 0, 64, 64);
+        ctx.restore();
+
+        favicon.href = canvas.toDataURL("image/png");
+        angle = (angle + 10) % 360;
+      }, 150);
+    };
+  </script> -->
+</body>
+
+</html>
