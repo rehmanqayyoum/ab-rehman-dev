@@ -96,7 +96,6 @@ const Home = () => {
             link: "https://beta.ajsmaju.com/",
             featured: false,
         }
-
     ];
 
     return (
