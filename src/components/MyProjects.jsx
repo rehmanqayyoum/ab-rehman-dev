@@ -22,7 +22,7 @@ const MyProjects = ({ projects }) => {
                             <img
                                 src={project.image}
                                 alt={project.title}
-                                className="w-full h-56 object-contain group-hover:scale-105 transition-transform"
+                                className="w-full h-56 group-hover:scale-105 transition-transform"
                             />
                             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
                                 <Button asChild variant="secondary">
