@@ -36,34 +36,34 @@ const ContactForm = () => {
 
 
     return (
-        <form className="space-y-5 p-6 rounded-2xl border bg-gray-50 shadow-sm w-150" ref={formRef} onSubmit={sendEmail}>
+        <form className=" space-y-5 p-4 sm:p-6 md:p-8 rounded-2xl border bg-gray-50 shadow-sm w-full max-w-lg" ref={formRef} onSubmit={sendEmail}>
             <div>
-                <label className="block mb-2 text-sm font-medium text-muted-foreground">Your Name</label>
+                <label className="block mb-2 text-sm sm:text-base md:text-[16px] font-medium text-muted-foreground">Your Name</label>
                 <input
                     type="text"
                     name="user_name"
                     required
-                    className="w-full rounded-lg border border-gray-300 px-4 py-3 font-sans text-sm focus:border-primary focus:ring-2 focus:ring-primary/40 focus:outline-none transition"
+                    className="w-full rounded-lg border border-gray-300 px-3 sm:px-4 py-2.5 sm:py-3 font-sans text-sm sm:text-base md:text-[16px] focus:border-primary focus:ring-2 focus:ring-primary/40 focus:outline-none transition"
                     placeholder="Enter your name"
                 />
             </div>
             <div>
-                <label className="block mb-2 text-sm font-medium text-muted-foreground">Your Email</label>
+                <label className="block mb-2 text-sm sm:text-base md:text-[16px] font-medium text-muted-foreground">Your Email</label>
                 <input
                     type="email"
                     name="user_email" /* must match EmailJS template */
                     required
-                    className="w-full rounded-lg border border-gray-300 px-4 py-3 font-sans text-sm focus:border-primary focus:ring-2 focus:ring-primary/40 focus:outline-none transition"
+                    className="w-full rounded-lg border border-gray-300 px-3 sm:px-4 py-2.5 sm:py-3 font-sans text-sm sm:text-base md:text-[16px] focus:border-primary focus:ring-2 focus:ring-primary/40 focus:outline-none transition"
                     placeholder="Enter your email"
                 />
             </div>
             <div>
-                <label className="block mb-2 text-sm font-medium text-muted-foreground">Message</label>
+                <label className="block mb-2 text-sm sm:text-base md:text-[16px] font-medium text-muted-foreground">Message</label>
                 <textarea
                     rows={4}
                     name="message" /* must match EmailJS template */
                     required
-                    className="w-full rounded-lg border border-gray-300 px-4 py-3 font-sans text-sm focus:border-primary focus:ring-2 focus:ring-primary/40 focus:outline-none transition"
+                    className="w-full rounded-lg border border-gray-300 px-3 sm:px-4 py-2.5 sm:py-3 font-sans text-sm sm:text-base md:text-[16px] focus:border-primary focus:ring-2 focus:ring-primary/40 focus:outline-none transition"
                     placeholder="Write your message..."
                 />
             </div>
