@@ -118,22 +118,22 @@ const Home = () => {
                     </div>
 
                     <div className="text-center md:text-left md:pe-6">
-                        <p className="mb-3 inline-block rounded-full border px-3 py-1 text-xs text-muted-foreground">
+                        <p className="mb-3 inline-block rounded-full border px-3 py-1 text-xs text-muted-foreground font-medium">
                             Clean Code · Elegant UI · Seamless User Experience
                         </p>
                         <h1 className="mt-2 text-4xl font-heading font-bold sm:text-6xl">
                             Hi, I’m <span className="text-primary">Abdul Rehman</span>
                         </h1>
-                        <p className="mx-auto md:mx-0 mt-5 max-w-2xl text-lg font-sans text-muted-foreground">
+                        <p className="mx-auto md:mx-0 mt-5 max-w-2xl text-lg font-sans text-muted-foreground font-normal">
                             Frontend Engineer crafting fast, accessible and elegant Web or Mobile experiences.
                         </p>
 
                         <div className="mt-8 flex flex-wrap gap-4 justify-center md:justify-start">
                             <a href="#projects">
-                                <Button size="lg" className="font-sans rounded-xl">View Projects</Button>
+                                <Button size="lg" className="font-sans rounded-xl font-semibold">View Projects</Button>
                             </a>
                             <a href="#contact">
-                                <Button size="lg" variant="outline" className="font-sans rounded-xl">Contact Me</Button>
+                                <Button size="lg" variant="outline" className="font-sans rounded-xl font-semibold">Contact Me</Button>
                             </a>
                         </div>
                     </div>
@@ -148,7 +148,7 @@ const Home = () => {
                         About Me
                     </h2>
 
-                    <p className="text-base sm:text-lg md:text-lg lg:text-xl text-muted-foreground mb-6 leading-relaxed">
+                    <p className="text-base sm:text-lg md:text-lg lg:text-xl text-muted-foreground mb-6 leading-relaxed font-normal">
                         I’m a dedicated front-end developer with a passion for crafting clean,
                         engaging, and user-friendly digital experiences. My focus is on building
                         responsive interfaces that balance modern design with seamless usability.
@@ -159,17 +159,17 @@ const Home = () => {
                     <ul className="space-y-3 sm:space-y-4 text-left">
                         <li className="flex items-start sm:items-center gap-3">
                         <User className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-primary shrink-0 mt-1 sm:mt-0" />
-                        <span className="text-sm sm:text-base md:text-base">5 years of professional coding and development experience</span>
+                        <span className="text-sm sm:text-base md:text-base font-medium">5 years of professional coding and development experience</span>
                         </li>
 
                         <li className="flex items-start sm:items-center gap-3">
                         <Code2 className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-primary shrink-0 mt-1 sm:mt-0" />
-                        <span className="text-sm sm:text-base md:text-base">Skilled in modern front-end technologies and best practices</span>
+                        <span className="text-sm sm:text-base md:text-base font-medium">Skilled in modern front-end technologies and best practices</span>
                         </li>
 
                         <li className="flex items-start sm:items-center gap-3">
                         <Rocket className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-primary shrink-0 mt-1 sm:mt-0" />
-                        <span className="text-sm sm:text-base md:text-base">Driven to deliver fast, polished, and intuitive interfaces</span>
+                        <span className="text-sm sm:text-base md:text-base font-medium">Driven to deliver fast, polished, and intuitive interfaces</span>
                         </li>
                     </ul>
                     </div>
@@ -249,7 +249,7 @@ const Home = () => {
                     <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-900 mb-2 mt-3">
                     Web Development
                     </h3>
-                    <p className="text-sm sm:text-[15px] md:text-[15px] lg:text-[16px] text-gray-600">
+                    <p className="text-sm sm:text-[15px] md:text-[15px] lg:text-[16px] text-gray-600 font-normal">
                     Building fast, modern, and SEO-friendly websites with clean, scalable
                     code.
                     </p>
@@ -262,7 +262,7 @@ const Home = () => {
                     <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-900 mb-2 mt-3">
                     UI/UX Implementation
                     </h3>
-                    <p className="text-sm sm:text-[15px] md:text-[15px] lg:text-[16px] text-gray-600">
+                    <p className="text-sm sm:text-[15px] md:text-[15px] lg:text-[16px] text-gray-600 font-normal">
                     Converting Figma/Sketch designs into pixel-perfect, responsive, and
                     user-friendly interfaces.
                     </p>
@@ -275,7 +275,7 @@ const Home = () => {
                     <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-900 mb-2 mt-3">
                     SPA & Dashboards
                     </h3>
-                    <p className="text-sm sm:text-[15px] md:text-[15px] lg:text-[16px] text-gray-600">
+                    <p className="text-sm sm:text-[15px] md:text-[15px] lg:text-[16px] text-gray-600 font-normal">
                     Developing dynamic Single Page Applications and dashboards using React
                     & modern frameworks.
                     </p>
@@ -288,7 +288,7 @@ const Home = () => {
                     <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-900 mb-2 mt-3">
                     Performance Optimization
                     </h3>
-                    <p className="text-sm sm:text-[15px] md:text-[15px] lg:text-[16px] text-gray-600">
+                    <p className="text-sm sm:text-[15px] md:text-[15px] lg:text-[16px] text-gray-600 font-normal">
                     Speed optimization, Core Web Vitals improvements, and smooth
                     cross-browser experiences.
                     </p>
@@ -301,7 +301,7 @@ const Home = () => {
                     <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-900 mb-2 mt-3">
                     API Integration
                     </h3>
-                    <p className="text-sm sm:text-[15px] md:text-[15px] lg:text-[16px] text-gray-600">
+                    <p className="text-sm sm:text-[15px] md:text-[15px] lg:text-[16px] text-gray-600 font-normal">
                     Connecting applications with REST/GraphQL APIs for real-time data and
                     smooth functionality.
                     </p>
@@ -314,7 +314,7 @@ const Home = () => {
                     <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-900 mb-2 mt-3">
                     RTL & Multilingual
                     </h3>
-                    <p className="text-sm sm:text-[15px] md:text-[15px] lg:text-[16px] text-gray-600">
+                    <p className="text-sm sm:text-[15px] md:text-[15px] lg:text-[16px] text-gray-600 font-normal">
                     Implementing right-to-left (Arabic/Urdu) and multilingual website
                     support for global reach.
                     </p>
@@ -336,7 +336,7 @@ const Home = () => {
                         </h2>
 
                         {/* Paragraph */}
-                        <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-7 md:mb-8 text-primary-foreground">
+                        <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-7 md:mb-8 text-primary-foreground font-normal">
                         I’m excited to hear about your project, big or small. Let’s collaborate to
                         bring it to life. Reach out today, and together we’ll turn your vision
                         into reality!
@@ -347,7 +347,7 @@ const Home = () => {
                         <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
                             <Button
                             size="lg"
-                            className="rounded-full shadow-lg px-6 sm:px-7 md:px-8 py-3 sm:py-3.5 md:py-4"
+                            className="rounded-full shadow-lg px-6 sm:px-7 md:px-8 py-3 sm:py-3.5 md:py-4 font-semibold"
                             >
                             View CV
                             </Button>
@@ -356,7 +356,7 @@ const Home = () => {
                             <Button
                             size="lg"
                             variant="secondary"
-                            className="rounded-full shadow-lg px-6 sm:px-7 md:px-8 py-3 sm:py-3.5 md:py-4"
+                            className="font-semibold rounded-full shadow-lg px-6 sm:px-7 md:px-8 py-3 sm:py-3.5 md:py-4"
                             >
                             Hire Me
                             </Button>
@@ -369,10 +369,7 @@ const Home = () => {
             <section id="projects" className="border-t py-20">
                 <div className="max-w-6xl mx-auto px-6">
                     <h2
-                    className="
-                        text-xl sm:text-2xl md:text-[16px] 
-                        font-bold text-center mb-12
-                    "
+                    className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 text-center mb-12"
                     >
                     Featured <span className="text-primary">Projects</span>
                     </h2>
@@ -400,7 +397,7 @@ const Home = () => {
                     <div className="grid grid-cols-1 md:grid-cols-[35%_65%] gap-10">
                     {/* Left Side */}
                     <div className="space-y-8 text-center md:text-left">
-                        <p className="text-muted-foreground leading-relaxed text-base md:text-[16px]">
+                        <p className="text-muted-foreground leading-relaxed text-base md:text-[16px] font-normal">
                         Feel free to reach out. I’m always open to discussing projects,
                         creative ideas, or opportunities to be part of your vision.
                         </p>
@@ -418,7 +415,7 @@ const Home = () => {
                             <h4 className="font-semibold text-sm md:text-base">Email</h4>
                             <a
                                 href="mailto:rehmanqayyoum1@gmail.com"
-                                className="text-muted-foreground hover:text-primary transition-colors text-sm md:text-[16px]"
+                                className="font-normal text-muted-foreground hover:text-primary transition-colors text-sm md:text-[16px]"
                             >
                                 rehmanqayyoum1@gmail.com
                             </a>
@@ -436,7 +433,7 @@ const Home = () => {
                             <h4 className="font-semibold text-sm md:text-base">Phone</h4>
                             <a
                                 href="tel:+923014022328"
-                                className="text-muted-foreground hover:text-primary transition-colors text-sm md:text-[16px]"
+                                className="font-normal text-muted-foreground hover:text-primary transition-colors text-sm md:text-[16px]"
                             >
                                 +92 301 4022328
                             </a>
@@ -456,7 +453,7 @@ const Home = () => {
                                 href="https://www.linkedin.com/in/rehman-qayyoum-52425b1b6"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-muted-foreground hover:text-primary transition-colors text-sm md:text-[16px]"
+                                className="font-normal text-muted-foreground hover:text-primary transition-colors text-sm md:text-[16px]"
                             >
                                 linkedin.com/in/yourprofile
                             </a>

@@ -48,7 +48,7 @@ const Navbar = () => {
 
     const NavLink = ({ href, children }) => (
         <a href={href}
-            className="text-sm font-sans text-muted-foreground hover:text-primary transition-colors"
+            className="text-sm font-sans text-muted-foreground hover:text-primary transition-colors font-normal"
             onClick={() => setOpen(false)} >
             {children}
         </a>
@@ -69,10 +69,10 @@ const Navbar = () => {
                         <NavLink href="#contact">Contact</NavLink>
                         <ThemeToggle />
                         <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-                            <Button size="sm" variant="outline" className="font-sans rounded-full">My Resume</Button>
+                            <Button size="sm" variant="outline" className="font-sans rounded-full font-semibold">My Resume</Button>
                         </a>
                         <a href="#contact">
-                            <Button size="sm" className="font-sans rounded-full">Hire Me</Button>
+                            <Button size="sm" className="font-sans rounded-full font-semibold">Hire Me</Button>
                         </a>
                     </nav>
 

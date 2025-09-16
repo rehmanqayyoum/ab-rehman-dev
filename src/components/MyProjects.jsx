@@ -40,7 +40,7 @@ const MyProjects = ({ projects }) => {
                             </CardTitle>
                         </CardHeader>
                         <CardContent>
-                            <p className="text-gray-600 text-sm mb-4">{project.description}</p>
+                            <p className="text-gray-600 text-sm mb-4 font-normal">{project.description}</p>
                             <div className="flex flex-wrap gap-2">
                                 {project.tags.map((tag, i) => (
                                     <Badge key={i} variant="outline">
@@ -56,7 +56,7 @@ const MyProjects = ({ projects }) => {
             <div className="flex justify-center mt-8 space-x-2">
                 {[...Array(totalPages)].map((_, i) => (
                     <button key={i} onClick={() => setCurrentPage(i + 1)}
-                        className={`px-4 py-2 rounded-lg border transition ${currentPage === i + 1
+                        className={`font-normal px-4 py-2 rounded-lg border transition ${currentPage === i + 1
                             ? "bg-primary text-white"
                             : "bg-white text-gray-700 border-gray-300 hover:bg-gray-100"
                             }`}
