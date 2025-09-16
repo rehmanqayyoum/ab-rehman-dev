@@ -48,7 +48,7 @@ const Navbar = () => {
 
     const NavLink = ({ href, children }) => (
         <a href={href}
-            className="text-sm font-sans text-muted-foreground hover:text-primary transition-colors font-normal"
+            className="text-sm font-sans text-muted-foreground hover:text-primary transition-colors font-medium"
             onClick={() => setOpen(false)} >
             {children}
         </a>
