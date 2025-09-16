@@ -29,6 +29,7 @@ import UnifiedImg from '../assets/images/projects/Unified.png';
 import DigitalMindsImg from '../assets/images/projects/digital-minds-on.png';
 import WorkInAusImg from '../assets/images/projects/workinaus.png';
 import AJSMajuImg from '../assets/images/projects/ajsmaju.png';
+import MykakaksAdminImg from '../assets/images/projects/mykakaks-admin.png';
 import ContactForm from '@/components/ContactForm';
 import MyProjects from '@/components/MyProjects';
 
@@ -94,6 +95,14 @@ const Home = () => {
             image: AJSMajuImg,
             tags: ["React", "Bootstrap", "UI/UX", "Brand Identity", "Responsive Web", "XD to React Conversion"],
             link: "https://beta.ajsmaju.com/",
+            featured: false,
+        },
+        {
+            title: "Mykakaks Admin Panel",
+            description: "Developed an admin dashboard for Mykakaks to streamline bookings, customer management, team allocations, and slot availability. Designed with a modern, responsive UI/UX to optimize daily operations and ensure scalability.",
+            image: MykakaksAdminImg,
+            tags: ["React", "Bootstrap", "React DataTable", "Admin Dashboard", "Responsive Design"],
+            link: "#",
             featured: false,
         }
     ];
