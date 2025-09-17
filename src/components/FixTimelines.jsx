@@ -25,19 +25,19 @@ const FixTimelines = () => {
             <a href="https://www.linkedin.com/in/rehman-qayyoum-52425b1b6/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 flex items-center justify-center rounded-full bg-primary text-white shadow-lg hover:scale-110 transition-transform"
+                className="w-12 h-12 flex items-center justify-center rounded-full bg-primary text-white shadow-lg hover:scale-110 transition-transform dark:bg-gradient-to-br dark:from-slate-900 dark:to-slate-950"
             >
                 <Linkedin size={22} />
             </a>
 
             <a href="mailto:rehmanqayyoum1@gmail.com"
-                className="w-12 h-12 flex items-center justify-center rounded-full bg-primary text-white shadow-lg hover:scale-110 transition-transform"
+                className="w-12 h-12 flex items-center justify-center rounded-full bg-primary text-white shadow-lg hover:scale-110 transition-transform dark:bg-gradient-to-br dark:from-slate-900 dark:to-slate-950"
             >
                 <Mail size={22} />
             </a>
 
             <a href="tel:+923014022328"
-                className="w-12 h-12 flex items-center justify-center rounded-full bg-primary text-white shadow-lg hover:scale-110 transition-transform"
+                className="w-12 h-12 flex items-center justify-center rounded-full bg-primary text-white shadow-lg hover:scale-110 transition-transform dark:bg-gradient-to-br dark:from-slate-900 dark:to-slate-950"
             >
                 <Phone size={22} />
             </a>
@@ -46,7 +46,7 @@ const FixTimelines = () => {
 
             {showTopBtn && (
                 <button onClick={scrollToTop}
-                    className="relative  w-12 h-12 flex items-center justify-center rounded-full bg-primary text-white shadow-lg hover:scale-110 hover:rotate-12 transition-all duration-300"
+                    className="relative  w-12 h-12 flex items-center justify-center rounded-full bg-primary dark:bg-gradient-to-br dark:from-slate-900 dark:to-slate-950 text-white shadow-lg hover:scale-110 hover:rotate-12 transition-all duration-300"
                 >
                     <ArrowUp size={22} />
                     <span className="absolute inset-0 rounded-full bg-primary/40 animate-ripple"></span>

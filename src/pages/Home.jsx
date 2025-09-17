@@ -142,236 +142,219 @@ const Home = () => {
 
             <section id="about" className="border-t py-10 sm:py-12 md:py-16 lg:py-20 xl:py-24">
                 <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
-                    {/* Left: Text */}
                     <div className="text-center md:text-left px-0 sm:px-2 md:px-0">
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-5 md:mb-6">
-                        About Me
-                    </h2>
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-5 md:mb-6">
+                            About Me
+                        </h2>
 
-                    <p className="text-base sm:text-lg md:text-lg lg:text-xl text-muted-foreground mb-6 leading-relaxed font-normal">
-                        I’m a dedicated front-end developer with a passion for crafting clean,
-                        engaging, and user-friendly digital experiences. My focus is on building
-                        responsive interfaces that balance modern design with seamless usability.
-                        With years of hands-on coding and problem-solving, I bring both creativity
-                        and precision to every project I work on.
-                    </p>
+                        <p className="text-base sm:text-lg md:text-lg lg:text-xl text-muted-foreground mb-6 leading-relaxed font-normal">
+                            I’m a dedicated front-end developer with a passion for crafting clean,
+                            engaging, and user-friendly digital experiences. My focus is on building
+                            responsive interfaces that balance modern design with seamless usability.
+                            With years of hands-on coding and problem-solving, I bring both creativity
+                            and precision to every project I work on.
+                        </p>
 
-                    <ul className="space-y-3 sm:space-y-4 text-left">
-                        <li className="flex items-start sm:items-center gap-3">
-                        <User className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-primary shrink-0 mt-1 sm:mt-0" />
-                        <span className="text-sm sm:text-base md:text-base font-medium">5 years of professional coding and development experience</span>
-                        </li>
+                        <ul className="space-y-3 sm:space-y-4 text-left">
+                            <li className="flex items-start sm:items-center gap-3">
+                                <User className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-primary shrink-0 mt-1 sm:mt-0" />
+                                <span className="text-sm sm:text-base md:text-base font-medium">5 years of professional coding and development experience</span>
+                            </li>
 
-                        <li className="flex items-start sm:items-center gap-3">
-                        <Code2 className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-primary shrink-0 mt-1 sm:mt-0" />
-                        <span className="text-sm sm:text-base md:text-base font-medium">Skilled in modern front-end technologies and best practices</span>
-                        </li>
+                            <li className="flex items-start sm:items-center gap-3">
+                                <Code2 className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-primary shrink-0 mt-1 sm:mt-0" />
+                                <span className="text-sm sm:text-base md:text-base font-medium">Skilled in modern front-end technologies and best practices</span>
+                            </li>
 
-                        <li className="flex items-start sm:items-center gap-3">
-                        <Rocket className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-primary shrink-0 mt-1 sm:mt-0" />
-                        <span className="text-sm sm:text-base md:text-base font-medium">Driven to deliver fast, polished, and intuitive interfaces</span>
-                        </li>
-                    </ul>
+                            <li className="flex items-start sm:items-center gap-3">
+                                <Rocket className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-primary shrink-0 mt-1 sm:mt-0" />
+                                <span className="text-sm sm:text-base md:text-base font-medium">Driven to deliver fast, polished, and intuitive interfaces</span>
+                            </li>
+                        </ul>
                     </div>
 
-                    {/* Right: Avatar / Lottie */}
                     <div className="flex justify-center md:justify-start px-0 sm:px-2 md:px-0">
-                    <div className="user-avatar transform scale-100 sm:scale-105 md:scale-110 lg:scale-125">
-                        <Lottie
-                        animationData={AboutDev}
-                        loop={true}
-                        className="w-full sm:w-2/3 md:w-3/4 lg:max-w-[500px] xl:max-w-[560px] 2xl:max-w-[640px]"
-                        />
-                    </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="tools_technologies" className="py-10 sm:py-12 md:py-16 lg:py-20 bg-gray-50">
-                <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-                    {/* Heading */}
-                    <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-center text-gray-800 mb-6 sm:mb-8 md:mb-10">
-                    <span className="text-primary">Tools & Technologies</span> I Work With
-                    </h2>
-
-                    {/* Marquee */}
-                    <div className="mx-auto max-w-6xl items-center">
-                    <div className="relative overflow-hidden">
-                        <div className="flex animate-marquee space-x-10 sm:space-x-14 md:space-x-16 lg:space-x-20 py-4 sm:py-6">
-                        {/* 1st set */}
-                        <img src={HtmlLogo} alt="Html" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
-                        <img src={CssLogo} alt="Css" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
-                        <img src={JsLogo} alt="JavaScript" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
-                        <img src={ReactLogo} alt="React" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
-                        <img src={VueLogo} alt="Vue" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
-                        <img src={AngularLogo} alt="Angular" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
-                        <img src={ShopifyLogo} alt="Shopify" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
-                        <img src={PhpLogo} alt="PHP" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
-                        <img src={LaravelLogo} alt="Laravel" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
-                        <img src={WordpressLogo} alt="WordPress" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
-                        <img src={TailwindLogo} alt="Tailwind CSS" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
-
-                        {/* 2nd set for infinite loop */}
-                        <img src={HtmlLogo} alt="Html" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
-                        <img src={CssLogo} alt="Css" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
-                        <img src={JsLogo} alt="JavaScript" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
-                        <img src={ReactLogo} alt="React" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
-                        <img src={VueLogo} alt="Vue" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
-                        <img src={AngularLogo} alt="Angular" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
-                        <img src={ShopifyLogo} alt="Shopify" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
-                        <img src={PhpLogo} alt="PHP" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
-                        <img src={LaravelLogo} alt="Laravel" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
-                        <img src={WordpressLogo} alt="WordPress" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
-                        <img src={TailwindLogo} alt="Tailwind CSS" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
+                        <div className="user-avatar transform scale-100 sm:scale-105 md:scale-110 lg:scale-125">
+                            <Lottie
+                                animationData={AboutDev}
+                                loop={true}
+                                className="w-full sm:w-2/3 md:w-3/4 lg:max-w-[500px] xl:max-w-[560px] 2xl:max-w-[640px]"
+                            />
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <section id="tools_technologies" className="py-10 sm:py-12 md:py-16 lg:py-20 bg-gray-50 dark:text-gray-100 dark:bg-gradient-to-br dark:from-slate-900 dark:to-slate-950">
+                <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-center text-gray-800 dark:text-gray-100 mb-6 sm:mb-8 md:mb-10">
+                        <span className="text-primary">Tools & Technologies</span> I Work With
+                    </h2>
+
+                    <div className="mx-auto max-w-6xl items-center">
+                        <div className="relative overflow-hidden">
+                            <div className="flex animate-marquee space-x-10 sm:space-x-14 md:space-x-16 lg:space-x-20 py-4 sm:py-6">
+                                <img src={HtmlLogo} alt="Html" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
+                                <img src={CssLogo} alt="Css" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
+                                <img src={JsLogo} alt="JavaScript" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
+                                <img src={ReactLogo} alt="React" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
+                                <img src={VueLogo} alt="Vue" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
+                                <img src={AngularLogo} alt="Angular" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
+                                <img src={ShopifyLogo} alt="Shopify" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
+                                <img src={PhpLogo} alt="PHP" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
+                                <img src={LaravelLogo} alt="Laravel" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
+                                <img src={WordpressLogo} alt="WordPress" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
+                                <img src={TailwindLogo} alt="Tailwind CSS" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
+
+                                <img src={HtmlLogo} alt="Html" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
+                                <img src={CssLogo} alt="Css" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
+                                <img src={JsLogo} alt="JavaScript" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
+                                <img src={ReactLogo} alt="React" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
+                                <img src={VueLogo} alt="Vue" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
+                                <img src={AngularLogo} alt="Angular" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
+                                <img src={ShopifyLogo} alt="Shopify" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
+                                <img src={PhpLogo} alt="PHP" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
+                                <img src={LaravelLogo} alt="Laravel" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
+                                <img src={WordpressLogo} alt="WordPress" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
+                                <img src={TailwindLogo} alt="Tailwind CSS" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
 
-            <section id="my_services" className="py-10 sm:py-12 md:py-16 lg:py-20 bg-white">
-            <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-                {/* Heading */}
-                <div className="text-center mb-8 sm:mb-12 md:mb-14 lg:mb-16">
-                <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900">
-                    My <span className="text-primary">Services</span>
-                </h2>
-                </div>
+            <section id="my_services" className="py-10 sm:py-12 md:py-16 lg:py-20 bg-white dark:bg-black">
+                <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-8 sm:mb-12 md:mb-14 lg:mb-16">
+                        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-gray-100">
+                            My <span className="text-primary dark:text-gray-100">Services</span>
+                        </h2>
+                    </div>
 
-                {/* Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-6 md:gap-8 lg:gap-10">
-                {/* Service Card */}
-                <div className="relative bg-gray-50 p-6 sm:p-7 md:p-8 lg:p-10 rounded-2xl shadow hover:shadow-lg transition cursor-pointer mb-5">
-                    <span className="absolute -top-6 left-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary/60">
-                    01
-                    </span>
-                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-900 mb-2 mt-3">
-                    Web Development
-                    </h3>
-                    <p className="text-sm sm:text-[15px] md:text-[15px] lg:text-[16px] text-gray-600 font-normal">
-                    Building fast, modern, and SEO-friendly websites with clean, scalable
-                    code.
-                    </p>
-                </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-6 md:gap-8 lg:gap-10">
+                        <div className="relative bg-gray-50 dark:bg-gradient-to-br dark:from-slate-900 dark:to-slate-950 p-6 sm:p-7 md:p-8 lg:p-10 rounded-2xl shadow hover:shadow-lg transition cursor-pointer mb-5">
+                            <span className="absolute -top-6 left-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary/60">
+                                01
+                            </span>
+                            <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-2 mt-3">
+                                Web Development
+                            </h3>
+                            <p className="text-sm sm:text-[15px] md:text-[15px] lg:text-[16px] text-gray-600 dark:text-gray-100 font-normal">
+                                Building fast, modern, and SEO-friendly websites with clean, scalable
+                                code.
+                            </p>
+                        </div>
 
-                <div className="relative bg-gray-50 p-6 sm:p-7 md:p-8 lg:p-10 rounded-2xl shadow hover:shadow-lg transition cursor-pointer mb-5">
-                    <span className="absolute -top-6 left-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary/60">
-                    02
-                    </span>
-                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-900 mb-2 mt-3">
-                    UI/UX Implementation
-                    </h3>
-                    <p className="text-sm sm:text-[15px] md:text-[15px] lg:text-[16px] text-gray-600 font-normal">
-                    Converting Figma/Sketch designs into pixel-perfect, responsive, and
-                    user-friendly interfaces.
-                    </p>
-                </div>
+                        <div className="relative bg-gray-50 dark:bg-gradient-to-br dark:from-slate-900 dark:to-slate-950 p-6 sm:p-7 md:p-8 lg:p-10 rounded-2xl shadow hover:shadow-lg transition cursor-pointer mb-5">
+                            <span className="absolute -top-6 left-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary/60">
+                                02
+                            </span>
+                            <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-2 mt-3">
+                                UI/UX Implementation
+                            </h3>
+                            <p className="text-sm sm:text-[15px] md:text-[15px] lg:text-[16px] text-gray-600 dark:text-gray-100 font-normal">
+                                Converting Figma/Sketch designs into pixel-perfect, responsive, and
+                                user-friendly interfaces.
+                            </p>
+                        </div>
 
-                <div className="relative bg-gray-50 p-6 sm:p-7 md:p-8 lg:p-10 rounded-2xl shadow hover:shadow-lg transition cursor-pointer mb-5">
-                    <span className="absolute -top-6 left-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary/60">
-                    03
-                    </span>
-                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-900 mb-2 mt-3">
-                    SPA & Dashboards
-                    </h3>
-                    <p className="text-sm sm:text-[15px] md:text-[15px] lg:text-[16px] text-gray-600 font-normal">
-                    Developing dynamic Single Page Applications and dashboards using React
-                    & modern frameworks.
-                    </p>
-                </div>
+                        <div className="relative bg-gray-50 dark:bg-gradient-to-br dark:from-slate-900 dark:to-slate-950 p-6 sm:p-7 md:p-8 lg:p-10 rounded-2xl shadow hover:shadow-lg transition cursor-pointer mb-5">
+                            <span className="absolute -top-6 left-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary/60">
+                                03
+                            </span>
+                            <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-2 mt-3">
+                                SPA & Dashboards
+                            </h3>
+                            <p className="text-sm sm:text-[15px] md:text-[15px] lg:text-[16px] text-gray-600 dark:text-gray-100 font-normal">
+                                Developing dynamic Single Page Applications and dashboards using React
+                                & modern frameworks.
+                            </p>
+                        </div>
 
-                <div className="relative bg-gray-50 p-6 sm:p-7 md:p-8 lg:p-10 rounded-2xl shadow hover:shadow-lg transition cursor-pointer mb-5">
-                    <span className="absolute -top-6 left-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary/60">
-                    04
-                    </span>
-                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-900 mb-2 mt-3">
-                    Performance Optimization
-                    </h3>
-                    <p className="text-sm sm:text-[15px] md:text-[15px] lg:text-[16px] text-gray-600 font-normal">
-                    Speed optimization, Core Web Vitals improvements, and smooth
-                    cross-browser experiences.
-                    </p>
-                </div>
+                        <div className="relative bg-gray-50 dark:bg-gradient-to-br dark:from-slate-900 dark:to-slate-950 p-6 sm:p-7 md:p-8 lg:p-10 rounded-2xl shadow hover:shadow-lg transition cursor-pointer mb-5">
+                            <span className="absolute -top-6 left-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary/60">
+                                04
+                            </span>
+                            <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-2 mt-3">
+                                Performance Optimization
+                            </h3>
+                            <p className="text-sm sm:text-[15px] md:text-[15px] lg:text-[16px] text-gray-600 dark:text-gray-100 font-normal">
+                                Speed optimization, Core Web Vitals improvements, and smooth
+                                cross-browser experiences.
+                            </p>
+                        </div>
 
-                <div className="relative bg-gray-50 p-6 sm:p-7 md:p-8 lg:p-10 rounded-2xl shadow hover:shadow-lg transition cursor-pointer mb-5">
-                    <span className="absolute -top-6 left-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary/60">
-                    05
-                    </span>
-                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-900 mb-2 mt-3">
-                    API Integration
-                    </h3>
-                    <p className="text-sm sm:text-[15px] md:text-[15px] lg:text-[16px] text-gray-600 font-normal">
-                    Connecting applications with REST/GraphQL APIs for real-time data and
-                    smooth functionality.
-                    </p>
-                </div>
+                        <div className="relative bg-gray-50 dark:bg-gradient-to-br dark:from-slate-900 dark:to-slate-950 p-6 sm:p-7 md:p-8 lg:p-10 rounded-2xl shadow hover:shadow-lg transition cursor-pointer mb-5">
+                            <span className="absolute -top-6 left-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary/60">
+                                05
+                            </span>
+                            <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-2 mt-3">
+                                API Integration
+                            </h3>
+                            <p className="text-sm sm:text-[15px] md:text-[15px] lg:text-[16px] text-gray-600 dark:text-gray-100 font-normal">
+                                Connecting applications with REST/GraphQL APIs for real-time data and
+                                smooth functionality.
+                            </p>
+                        </div>
 
-                <div className="relative bg-gray-50 p-6 sm:p-7 md:p-8 lg:p-10 rounded-2xl shadow hover:shadow-lg transition cursor-pointer mb-5">
-                    <span className="absolute -top-6 left-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary/60">
-                    06
-                    </span>
-                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-900 mb-2 mt-3">
-                    RTL & Multilingual
-                    </h3>
-                    <p className="text-sm sm:text-[15px] md:text-[15px] lg:text-[16px] text-gray-600 font-normal">
-                    Implementing right-to-left (Arabic/Urdu) and multilingual website
-                    support for global reach.
-                    </p>
+                        <div className="relative bg-gray-50 dark:bg-gradient-to-br dark:from-slate-900 dark:to-slate-950 p-6 sm:p-7 md:p-8 lg:p-10 rounded-2xl shadow hover:shadow-lg transition cursor-pointer mb-5">
+                            <span className="absolute -top-6 left-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary/60">
+                                06
+                            </span>
+                            <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-2 mt-3">
+                                RTL & Multilingual
+                            </h3>
+                            <p className="text-sm sm:text-[15px] md:text-[15px] lg:text-[16px] text-gray-600 dark:text-gray-100 font-normal">
+                                Implementing right-to-left (Arabic/Urdu) and multilingual website
+                                support for global reach.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                </div>
-            </div>
             </section>
 
 
             <section id="how_banner" className="relative bg-cover bg-center bg-no-repeat py-14 sm:py-16 md:py-20 lg:py-24" style={{ backgroundImage: `url(${cover1})` }}>
-                    {/* Overlay */}
-                    <div className="absolute inset-0 bg-primary/70"></div>
+                <div className="absolute inset-0 bg-primary/70 dark:bg-gradient-to-br dark:from-slate-800 dark:to-slate-250"></div>
 
-                    {/* Content */}
-                    <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 md:px-8 text-center">
-                        {/* Heading */}
-                        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 sm:mb-5 md:mb-6 text-primary-foreground">
+                <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 md:px-8 text-center">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 sm:mb-5 md:mb-6 text-primary-foreground">
                         Have any project in mind?
-                        </h2>
-
-                        {/* Paragraph */}
-                        <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-7 md:mb-8 text-primary-foreground font-normal">
+                    </h2>
+                    <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-7 md:mb-8 text-primary-foreground font-normal">
                         I’m excited to hear about your project, big or small. Let’s collaborate to
                         bring it to life. Reach out today, and together we’ll turn your vision
                         into reality!
-                        </p>
+                    </p>
 
-                        {/* Buttons */}
-                        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
                         <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
                             <Button
-                            size="lg"
-                            className="rounded-full shadow-lg px-6 sm:px-7 md:px-8 py-3 sm:py-3.5 md:py-4 font-semibold"
+                                size="lg"
+                                className="rounded-full shadow-lg px-6 sm:px-7 md:px-8 py-3 sm:py-3.5 md:py-4 font-semibold"
                             >
-                            View CV
+                                View CV
                             </Button>
                         </a>
                         <a href="#contact">
                             <Button
-                            size="lg"
-                            variant="secondary"
-                            className="font-semibold rounded-full shadow-lg px-6 sm:px-7 md:px-8 py-3 sm:py-3.5 md:py-4"
+                                size="lg"
+                                variant="secondary"
+                                className="font-semibold rounded-full shadow-lg px-6 sm:px-7 md:px-8 py-3 sm:py-3.5 md:py-4"
                             >
-                            Hire Me
+                                Hire Me
                             </Button>
                         </a>
-                        </div>
                     </div>
+                </div>
             </section>
 
 
-            <section id="projects" className="border-t py-20">
+            <section id="projects" className="border-t py-20 dark:bg-gradient-to-br dark:from-slate-900 dark:to-slate-950">
                 <div className="max-w-6xl mx-auto px-6">
-                    <h2
-                    className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 text-center mb-12"
-                    >
-                    Featured <span className="text-primary">Projects</span>
+                    <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-gray-100 text-center mb-12">
+                        Featured <span className="text-primary dark:text-gray-100">Projects</span>
                     </h2>
                     <MyProjects projects={projects} />
                 </div>
@@ -380,114 +363,91 @@ const Home = () => {
 
             <section id="contact" className="border-t py-16">
                 <div className="max-w-6xl mx-auto px-6">
-                    {/* Heading */}
                     <div className="text-center mb-12">
-                    <h2
-                        className="
-                        inline-block 
-                        text-2xl sm:text-3xl md:text-4xl 
-                        font-heading font-bold
-                        "
-                    >
-                        Get <span className="text-primary">In Touch</span>
-                    </h2>
+                        <h2 className=" inline-block text-2xl sm:text-3xl md:text-4xl font-heading font-bold">
+                            Get <span className="text-primary">In Touch</span>
+                        </h2>
                     </div>
 
-                    {/* Grid Layout */}
                     <div className="grid grid-cols-1 md:grid-cols-[35%_65%] gap-10">
-                    {/* Left Side */}
-                    <div className="space-y-8 text-center md:text-left">
-                        <p className="text-muted-foreground leading-relaxed text-base md:text-[16px] font-normal">
-                        Feel free to reach out. I’m always open to discussing projects,
-                        creative ideas, or opportunities to be part of your vision.
-                        </p>
+                        <div className="space-y-8 text-center md:text-left">
+                            <p className="text-muted-foreground leading-relaxed text-base md:text-[16px] font-normal">
+                                Feel free to reach out. I’m always open to discussing projects,
+                                creative ideas, or opportunities to be part of your vision.
+                            </p>
 
-                        {/* Contact Info */}
-                        <div className="space-y-6">
-                        {/* Email */}
-                        <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-                            <div className="flex justify-center sm:justify-start">
-                            <div className="p-3 rounded-full bg-primary/10 text-primary">
-                                <Mail className="w-6 h-6" />
-                            </div>
-                            </div>
-                            <div>
-                            <h4 className="font-semibold text-sm md:text-base">Email</h4>
-                            <a
-                                href="mailto:rehmanqayyoum1@gmail.com"
-                                className="font-normal text-muted-foreground hover:text-primary transition-colors text-sm md:text-[16px]"
-                            >
-                                rehmanqayyoum1@gmail.com
-                            </a>
+                            <div className="space-y-6">
+                                <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+                                    <div className="flex justify-center sm:justify-start">
+                                        <div className="p-3 rounded-full bg-primary/10 text-primary">
+                                            <Mail className="w-6 h-6" />
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h4 className="font-semibold text-sm md:text-base">Email</h4>
+                                        <a
+                                            href="mailto:rehmanqayyoum1@gmail.com"
+                                            className="font-normal text-muted-foreground hover:text-primary transition-colors text-sm md:text-[16px]"
+                                        >
+                                            rehmanqayyoum1@gmail.com
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+                                    <div className="flex justify-center sm:justify-start">
+                                        <div className="p-3 rounded-full bg-primary/10 text-primary">
+                                            <Phone className="w-6 h-6" />
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h4 className="font-semibold text-sm md:text-base">Phone</h4>
+                                        <a
+                                            href="tel:+923014022328"
+                                            className="font-normal text-muted-foreground hover:text-primary transition-colors text-sm md:text-[16px]"
+                                        >
+                                            +92 301 4022328
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+                                    <div className="flex justify-center sm:justify-start">
+                                        <div className="p-3 rounded-full bg-primary/10 text-primary">
+                                            <Linkedin className="w-6 h-6" />
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h4 className="font-semibold text-sm md:text-base">LinkedIn</h4>
+                                        <a
+                                            href="https://www.linkedin.com/in/rehman-qayyoum-52425b1b6"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="font-normal text-muted-foreground hover:text-primary transition-colors text-sm md:text-[16px]"
+                                        >
+                                            linkedin.com/in/yourprofile
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        {/* Phone */}
-                        <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-                            <div className="flex justify-center sm:justify-start">
-                            <div className="p-3 rounded-full bg-primary/10 text-primary">
-                                <Phone className="w-6 h-6" />
-                            </div>
-                            </div>
-                            <div>
-                            <h4 className="font-semibold text-sm md:text-base">Phone</h4>
-                            <a
-                                href="tel:+923014022328"
-                                className="font-normal text-muted-foreground hover:text-primary transition-colors text-sm md:text-[16px]"
-                            >
-                                +92 301 4022328
-                            </a>
-                            </div>
+                        <div className="md:justify-items-end">
+                            <ContactForm />
                         </div>
-
-                        {/* LinkedIn */}
-                        <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-                            <div className="flex justify-center sm:justify-start">
-                            <div className="p-3 rounded-full bg-primary/10 text-primary">
-                                <Linkedin className="w-6 h-6" />
-                            </div>
-                            </div>
-                            <div>
-                            <h4 className="font-semibold text-sm md:text-base">LinkedIn</h4>
-                            <a
-                                href="https://www.linkedin.com/in/rehman-qayyoum-52425b1b6"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="font-normal text-muted-foreground hover:text-primary transition-colors text-sm md:text-[16px]"
-                            >
-                                linkedin.com/in/yourprofile
-                            </a>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-
-                    {/* Right Side Form */}
-                    <div className="md:justify-items-end">
-                        <ContactForm />
-                    </div>
                     </div>
                 </div>
             </section>
 
-            {/* Footer */}
             <footer id="footer" className="bg-gray-900 py-6">
-            <div
-                className="
-                max-w-6xl mx-auto 
-                flex flex-col md:flex-row 
-                items-center justify-between 
-                px-4 text-xs sm:text-sm md:text-[16px] 
-                text-gray-400 gap-2 text-center md:text-left
-                "
-            >
-                <p className="font-medium">
-                Clean Code · Elegant UI · Seamless User Experience
-                </p>
-                <p className="font-medium">
-                © {new Date().getFullYear()} Abdul Rehman. All Rights Reserved.
-                </p>
-            </div>
+                <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between px-4 text-xs sm:text-sm md:text-[16px] text-gray-400 gap-2 text-center md:text-left">
+                    <p className="font-medium">
+                        Clean Code · Elegant UI · Seamless User Experience
+                    </p>
+                    <p className="font-medium">
+                        © {new Date().getFullYear()} Abdul Rehman. All Rights Reserved.
+                    </p>
+                </div>
             </footer>
 
         </div>
